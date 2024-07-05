@@ -1,0 +1,1166 @@
+var simplemaps_worldmap_mapdata={
+  main_settings: {
+   //General settings
+    width: "responsive", //'700' or 'responsive'
+    background_color: "#7bbdeb",
+    background_transparent: "yes",
+    border_color: "#7bbdeb",
+    popups: "detect",
+    
+    //State defaults
+    state_description: "State description",
+    state_color: "#34636c",
+    state_hover_color: "#3B729F",
+    state_url: "",
+    border_size: 1.5,
+    all_states_inactive: "no",
+    all_states_zoomable: "no",
+    
+    //Location defaults
+    location_description: "Location description",
+    location_color: "",
+    location_opacity: "",
+    location_hover_opacity: 1,
+    location_url: "",
+    location_size: "",
+    location_type: "square",
+    location_image_source: "frog.png",
+    location_border_color: "#FFFFFF",
+    location_border: 2,
+    location_hover_border: 2.5,
+    all_locations_inactive: "no",
+    all_locations_hidden: "no",
+    
+    //Label defaults
+    label_color: "#d5ddec",
+    label_hover_color: "#d5ddec",
+    label_size: 22,
+    label_font: "Arial",
+    hide_labels: "no",
+   
+    //Zoom settings
+    zoom: "yes",
+    back_image: "no",
+    initial_back: "no",
+    initial_zoom: -1,
+    initial_zoom_solo: "no",
+    region_opacity: 1,
+    region_hover_opacity: 0.6,
+    zoom_out_incrementally: "yes",
+    zoom_percentage: 0.99,
+    zoom_time: 0.5,
+    
+    //Popup settings
+    popup_color: "white",
+    popup_opacity: 0.9,
+    popup_shadow: 1,
+    popup_corners: 5,
+    popup_font: "12px/1.5 Verdana, Arial, Helvetica, sans-serif",
+    popup_nocss: "no",
+    
+    //Advanced settings
+    div: "map",
+    auto_load: "yes",
+    url_new_tab: "yes",
+    images_directory: "default",
+    fade_time: 0.1,
+    link_text: "View Website",
+    state_image_url: "",
+    state_image_position: "",
+    location_image_url: ""
+  },
+  state_specific: {
+    AF: {
+      name: "Afghanistan",
+      description: "Kabul"
+    },
+    AO: {
+      name: "Angola",
+      description: "Luanda"
+    },
+    AL: {
+      name: "Albania",
+      description: "Tirana"
+    },
+    AE: {
+      name: "United Arab Emirates",
+      description: "Abu Dhabi"
+    },
+    AR: {
+      name: "Argentina",
+      description: "Buenos Aires"
+    },
+    AM: {
+      name: "Armenia",
+      description: "Jerevan"
+    },
+    AU: {
+      name: "Australia",
+      description: "Canberra"
+    },
+    AT: {
+      name: "Austria",
+      description: "Vienna"
+    },
+    AZ: {
+      name: "Azerbaijan",
+      description: "Baku"
+    },
+    BI: {
+      name: "Burundi",
+      description: "Gitega"
+    },
+    BE: {
+      name: "Belgium",
+      description: "Brussels"
+    },
+    BJ: {
+      name: "Benin",
+      description: "Porto-Novo"
+    },
+    BF: {
+      name: "Burkina Faso",
+      description: "Ouagadougou"
+    },
+    BD: {
+      name: "Bangladesh",
+      description: "Dhaka"
+    },
+    BG: {
+      name: "Bulgaria",
+      description: "Sofia"
+    },
+    BH: {
+      name: "Bahrain",
+      description: "Manama"
+    },
+    BA: {
+      name: "Bosnia and Herzegovina",
+      description: "Sarajevo"
+    },
+    BY: {
+      name: "Belarus",
+      description: "Minsk"
+    },
+    BZ: {
+      name: "Belize",
+      description: "Belmopan"
+    },
+    BO: {
+      name: "Bolivia",
+      description: "La Paz"
+    },
+    BR: {
+      name: "Brazil",
+      description: "Brasília"
+    },
+    BN: {
+      name: "Brunei Darussalam",
+      description: "Bandar Seri Begawan"
+    },
+    BT: {
+      name: "Bhutan",
+      description: "Thimphu"
+    },
+    BW: {
+      name: "Botswana",
+      description: "Baborone"
+    },
+    CF: {
+      name: "Central African Republic",
+      description: "Bangui"
+    },
+    CA: {
+      name: "Canada",
+      description: "Ottawa"
+    },
+    CH: {
+      name: "Switzerland",
+      description: "Bern"
+    },
+    CL: {
+      name: "Chile",
+      description: "Santiago"
+    },
+    CN: {
+      name: "China",
+      description: "Beijing"
+    },
+    CI: {
+      name: "Côte d'Ivoire",
+      description: "Yamoussoukro"
+    },
+    CM: {
+      name: "Cameroon",
+      description: "Yaoundé"
+    },
+    CD: {
+      name: "Democratic Republic of the Congo",
+      description: "Kinshasa"
+    },
+    CG: {
+      name: "Republic of Congo",
+      description: "Brazzaville"
+    },
+    CO: {
+      name: "Colombia",
+      description: "Bogotá"
+    },
+    CR: {
+      name: "Costa Rica",
+      description: "San José"
+    },
+    CU: {
+      name: "Cuba",
+      description: "Havana"
+    },
+    CZ: {
+      name: "Czech Republic",
+      description: "Prague"
+    },
+    DE: {
+      name: "Germany",
+      description: "Berlin"
+    },
+    DJ: {
+      name: "Djibouti",
+      description: "Djibouti"
+    },
+    DK: {
+      name: "Denmark",
+      description: "Copenhagen"
+    },
+    DO: {
+      name: "Dominican Republic",
+      description: "Santo Domingo"
+    },
+    DZ: {
+      name: "Algeria",
+      description: "Alger"
+    },
+    EC: {
+      name: "Ecuador",
+      description: "Quito"
+    },
+    EG: {
+      name: "Egypt",
+      description: "Cairo"
+    },
+    ER: {
+      name: "Eritrea",
+      description: "Asmara"
+    },
+    EE: {
+      name: "Estonia",
+      description: "Tallinn"
+    },
+    ET: {
+      name: "Ethiopia",
+      description: "Addis Ababa"
+    },
+    FI: {
+      name: "Finland",
+      description: "Helsinki"
+    },
+    FJ: {
+      name: "Fiji",
+      description: "Suva"
+    },
+    GA: {
+      name: "Gabon",
+      description: "Libreville"
+    },
+    GB: {
+      name: "United Kingdom",
+      description: "London"
+    },
+    GE: {
+      name: "Georgia",
+      description: "Tbilisi"
+    },
+    GH: {
+      name: "Ghana",
+      description: "Accra"
+    },
+    GN: {
+      name: "Guinea",
+      description: "Conakry"
+    },
+    GM: {
+      name: "Gambia",
+      description: "Banjul"
+    },
+    GW: {
+      name: "Guinea-Bissau",
+      description: "Bissau"
+    },
+    GQ: {
+      name: "Equatorial Guinea",
+      description: "Malabo"
+    },
+    GR: {
+      name: "Greece",
+      description: "Athens"
+    },
+    GL: {
+      name: "Greenland",
+      description: "Nuuk"
+    },
+    GT: {
+      name: "Guatemala",
+      description: "Guatemala City"
+    },
+    GY: {
+      name: "Guyana",
+      description: "Georgetown"
+    },
+    HN: {
+      name: "Honduras",
+      description: "Tegucigalpa"
+    },
+    HR: {
+      name: "Croatia",
+      description: "Zagreb"
+    },
+    HT: {
+      name: "Haiti",
+      description: "Port-au-Prince"
+    },
+    HU: {
+      name: "Hungary",
+      description: "Budapest"
+    },
+    ID: {
+      name: "Indonesia",
+      description: "Jakarta"
+    },
+    IN: {
+      name: "India",
+      description: "New Delhi"
+    },
+    IE: {
+      name: "Ireland",
+      description: "Dublin"
+    },
+    IR: {
+      name: "Iran",
+      description: "Tehran"
+    },
+    IQ: {
+      name: "Iraq",
+      description: "Baghdad"
+    },
+    IS: {
+      name: "Iceland",
+      description: "Reykjavík"
+    },
+    IL: {
+      name: "Israel",
+      description: "Jerusalem"
+    },
+    IT: {
+      name: "Italy",
+      description: "Rome"
+    },
+    JM: {
+      name: "Jamaica",
+      description: "Kingston"
+    },
+    JO: {
+      name: "Jordan",
+      description: "Amman"
+    },
+    JP: {
+      name: "Japan",
+      description: "Tokyo"
+    },
+    KZ: {
+      name: "Kazakhstan",
+      description: "Astana"
+    },
+    KE: {
+      name: "Kenya",
+      description: "Nairobi"
+    },
+    KG: {
+      name: "Kyrgyzstan",
+      description: "Bishkek"
+    },
+    KH: {
+      name: "Cambodia",
+      description: "Phnom Penh"
+    },
+    KR: {
+      name: "Republic of Korea",
+      description: "Seoul"
+    },
+    XK: {
+      name: "Kosovo",
+      description: "Pristina"
+    },
+    KW: {
+      name: "Kuwait",
+      description: "Kuwait City"
+    },
+    LA: {
+      name: "Laos",
+      description: "Vientiane"
+    },
+    LB: {
+      name: "Lebanon",
+      description: "Beirut"
+    },
+    LR: {
+      name: "Liberia",
+      description: "Monrovia"
+    },
+    LY: {
+      name: "Libya",
+      description: "Tripoli"
+    },
+    LK: {
+      name: "Sri Lanka",
+      description: "Sri Jayawardenepura Kotte"
+    },
+    LS: {
+      name: "Lesotho",
+      description: "Maseru"
+    },
+    LT: {
+      name: "Lithuania",
+      description: "Vilnius"
+    },
+    LU: {
+      name: "Luxembourg",
+      description: "Luxembourg"
+    },
+    LV: {
+      name: "Latvia",
+      description: "Riga"
+    },
+    MA: {
+      name: "Morocco",
+      description: "Rabat"
+    },
+    MD: {
+      name: "Moldova",
+      description: "Chișinău"
+    },
+    MG: {
+      name: "Madagascar",
+      description: "Antananarivo"
+    },
+    MX: {
+      name: "Mexico",
+      description: "Mexico City"
+    },
+    MK: {
+      name: "Macedonia",
+      description: "Skopje"
+    },
+    ML: {
+      name: "Mali",
+      description: "Bamako"
+    },
+    MM: {
+      name: "Myanmar",
+      description: "Naypyidaw"
+    },
+    ME: {
+      name: "Montenegro",
+      description: "Podgorica"
+    },
+    MN: {
+      name: "Mongolia",
+      description: "Ulaanbaatar"
+    },
+    MZ: {
+      name: "Mozambique",
+      description: "Maputo"
+    },
+    MR: {
+      name: "Mauritania",
+      description: "Nouakchott"
+    },
+    MW: {
+      name: "Malawi",
+      description: "Lilongwe"
+    },
+    MY: {
+      name: "Malaysia",
+      description: "Kuala Lumpur"
+    },
+    NA: {
+      name: "Namibia",
+      description: "Windhoek"
+    },
+    NE: {
+      name: "Niger",
+      description: "Niamey"
+    },
+    NG: {
+      name: "Nigeria",
+      description: "Abuja"
+    },
+    NI: {
+      name: "Nicaragua",
+      description: "Managua"
+    },
+    NL: {
+      name: "Netherlands",
+      description: "Amsterdam"
+    },
+    NO: {
+      name: "Norway",
+      description: "Oslo"
+    },
+    NP: {
+      name: "Nepal",
+      description: "Kathmandu"
+    },
+    NZ: {
+      name: "New Zealand",
+      description: "Wellington"
+    },
+    OM: {
+      name: "Oman",
+      description: "Muscat"
+    },
+    PK: {
+      name: "Pakistan",
+      description: "Islamabad"
+    },
+    PA: {
+      name: "Panama",
+      description: "Panama City"
+    },
+    PE: {
+      name: "Peru",
+      description: "Lima"
+    },
+    PH: {
+      name: "Philippines",
+      description: "Manila"
+    },
+    PG: {
+      name: "Papua New Guinea",
+      description: "Port Moresby"
+    },
+    PL: {
+      name: "Poland",
+      description: "Warsaw"
+    },
+    KP: {
+      name: "Dem. Rep. Korea",
+      description: "Pyongyang"
+    },
+    PT: {
+      name: "Portugal",
+      description: "Lisbon"
+    },
+    PY: {
+      name: "Paraguay",
+      description: "Asunción"
+    },
+    PS: {
+      name: "Palestine",
+      description: "Jerusalem"
+    },
+    QA: {
+      name: "Qatar",
+      description: "Doha"
+    },
+    RO: {
+      name: "Romania",
+      description: "Bucharest"
+    },
+    RU: {
+      name: "Russia",
+      description: "Moscow"
+    },
+    RW: {
+      name: "Rwanda",
+      description: "Kigali"
+    },
+    EH: {
+      name: "Western Sahara",
+      description: "Tifariti"
+    },
+    SA: {
+      name: "Saudi Arabia",
+      description: "Riyadh"
+    },
+    SD: {
+      name: "Sudan",
+      description: "Khartoum"
+    },
+    SS: {
+      name: "South Sudan",
+      description: "Juba"
+    },
+    SN: {
+      name: "Senegal",
+      description: "Dakar"
+    },
+    SL: {
+      name: "Sierra Leone",
+      description: "Freetown"
+    },
+    SV: {
+      name: "El Salvador",
+      description: "San Salvador"
+    },
+    RS: {
+      name: "Serbia",
+      description: "Belgrade"
+    },
+    SR: {
+      name: "Suriname",
+      description: "Paramaribo"
+    },
+    SK: {
+      name: "Slovakia",
+      description: "Bratislava"
+    },
+    SI: {
+      name: "Slovenia",
+      description: "Ljubljana"
+    },
+    SE: {
+      name: "Sweden",
+      description: "Stockholm"
+    },
+    SZ: {
+      name: "Swaziland",
+      description: "Mbabane"
+    },
+    SY: {
+      name: "Syria",
+      description: "Damascus"
+    },
+    TD: {
+      name: "Chad",
+      description: "N'Djamena"
+    },
+    TG: {
+      name: "Togo",
+      description: "Lomé"
+    },
+    TH: {
+      name: "Thailand",
+      description: "Bangkok"
+    },
+    TJ: {
+      name: "Tajikistan",
+      description: "Dushanbe"
+    },
+    TM: {
+      name: "Turkmenistan",
+      description: "Ashgabat"
+    },
+    TL: {
+      name: "Timor-Leste",
+      description: "Dili"
+    },
+    TN: {
+      name: "Tunisia",
+      description: "Tunis"
+    },
+    TR: {
+      name: "Turkey",
+      description: "Ankara"
+    },
+    TW: {
+      name: "Taiwan",
+      description: "Taipei"
+    },
+    TZ: {
+      name: "Tanzania",
+      description: "Dodoma"
+    },
+    UG: {
+      name: "Uganda",
+      description: "Kampala"
+    },
+    UA: {
+      name: "Ukraine",
+      description: "Kyiv"
+    },
+    UY: {
+      name: "Uruguay",
+      description: "Montevideo"
+    },
+    US: {
+      name: "United States",
+      description: "Washington D.C."
+    },
+    UZ: {
+      name: "Uzbekistan",
+      description: "Tashkent"
+    },
+    VE: {
+      name: "Venezuela",
+      description: "Caracas"
+    },
+    VN: {
+      name: "Vietnam",
+      description: "Hanoi"
+    },
+    VU: {
+      name: "Vanuatu",
+      description: "Port Vila"
+    },
+    YE: {
+      name: "Yemen",
+      description: "Aden"
+    },
+    ZA: {
+      name: "South Africa",
+      description: "Cape Town"
+    },
+    ZM: {
+      name: "Zambia",
+      description: "Lusaka"
+    },
+    ZW: {
+      name: "Zimbabwe",
+      description: "Harare"
+    },
+    SO: {
+      name: "Somalia",
+      description: "Mogadishu"
+    },
+    GF: {
+      name: "France"
+    },
+    FR: {
+      name: "France",
+      description: "Paris"
+    },
+    ES: {
+      name: "Spain",
+      description: "Madrid"
+    },
+    AW: {
+      name: "Aruba",
+      description: "Oranjestad"
+    },
+    AI: {
+      name: "Anguilla",
+      description: "The Valley"
+    },
+    AD: {
+      name: "Andorra",
+      description: "Andorra la Vella"
+    },
+    AG: {
+      name: "Antigua and Barbuda",
+      description: "Saint John's"
+    },
+    BS: {
+      name: "Bahamas",
+      description: "Nassau"
+    },
+    BM: {
+      name: "Bermuda",
+      description: "Hamilton"
+    },
+    BB: {
+      name: "Barbados",
+      description: "Bridgetown"
+    },
+    KM: {
+      name: "Comoros",
+      description: "Moroni"
+    },
+    CV: {
+      name: "Cape Verde",
+      description: "Praia"
+    },
+    KY: {
+      name: "Cayman Islands",
+      description: "George Town"
+    },
+    DM: {
+      name: "Dominica",
+      description: "Roseau"
+    },
+    FK: {
+      name: "Falkland Islands",
+      description: "Stanley"
+    },
+    FO: {
+      name: "Faeroe Islands",
+      description: "Tórshavn"
+    },
+    GD: {
+      name: "Grenada",
+      description: "St. George's"
+    },
+    HK: {
+      name: "Hong Kong"
+    },
+    KN: {
+      name: "Saint Kitts and Nevis",
+      description: "Basseterre"
+    },
+    LC: {
+      name: "Saint Lucia",
+      description: "Castries"
+    },
+    LI: {
+      name: "Liechtenstein",
+      description: "Vaduz"
+    },
+    MF: {
+      name: "Saint Martin (French)",
+      description: "Marigot"
+    },
+    MV: {
+      name: "Maldives",
+      description: "Malé"
+    },
+    MT: {
+      name: "Malta",
+      description: "Valletta"
+    },
+    MS: {
+      name: "Montserrat",
+      description: "Brades"
+    },
+    MU: {
+      name: "Mauritius",
+      description: "Port Louis"
+    },
+    NC: {
+      name: "New Caledonia",
+      description: "Nouméa"
+    },
+    NR: {
+      name: "Nauru",
+      description: "Yaren"
+    },
+    PN: {
+      name: "Pitcairn Islands",
+      description: "Adamstown"
+    },
+    PR: {
+      name: "Puerto Rico",
+      description: "San Juan"
+    },
+    PF: {
+      name: "French Polynesia",
+      description: "Papeete"
+    },
+    SG: {
+      name: "Singapore",
+      description: "Sigapore"
+    },
+    SB: {
+      name: "Solomon Islands",
+      description: "Honiara"
+    },
+    ST: {
+      name: "São Tomé and Principe",
+      description: "São Tomé"
+    },
+    SX: {},
+    SC: {
+      name: "Seychelles",
+      description: "Victoria"
+    },
+    TC: {
+      name: "Turks and Caicos Islands",
+      description: "Cockburn Town"
+    },
+    TO: {
+      name: "Tonga",
+      description: "Nuku'alofa"
+    },
+    TT: {
+      name: "Trinidad and Tobago",
+      description: "Port of Spain"
+    },
+    VC: {
+      name: "Saint Vincent and the Grenadines",
+      description: "Kingstown"
+    },
+    VG: {
+      name: "British Virgin Islands",
+      description: "Road Town"
+    },
+    VI: {
+      name: "United States Virgin Islands",
+      description: "Charlotte Amalie"
+    },
+    CY: {
+      name: "Cyprus",
+      description: "Nicosia"
+    },
+    RE: {
+      name: "Reunion (France)",
+      description: "Saint-Denis"
+    },
+    YT: {
+      name: "Mayotte (France)",
+      description: "Mamoudzou"
+    },
+    MQ: {
+      name: "Martinique (France)",
+      description: "Fort-de-France"
+    },
+    GP: {
+      name: "Guadeloupe (France)",
+      description: "Basse-Terre"
+    },
+    CW: {
+      name: "Curaco (Netherlands)",
+      description: "Willemstad"
+    },
+    IC: {
+      name: "Canary Islands (Spain)",
+      description: "Santa Cruz de Tenerife"
+    }
+  },
+  locations: {},
+  labels: {},
+  legend: {
+    entries: []
+  },
+  regions: {
+    "0": {
+      name: "North America",
+      states: [
+        "MX",
+        "CA",
+        "US",
+        "GL",
+        "BM",
+        "BS",
+        "BZ",
+        "GT",
+        "HN",
+        "HT",
+        "JM",
+        "NI",
+        "PA",
+        "SV",
+        "BB",
+        "DM",
+        "KN",
+        "LC",
+        "MF",
+        "MS",
+        "SX",
+        "VC",
+        "PR",
+        "CR",
+        "DO",
+        "CU",
+        "AG",
+        "GD",
+        "GP",
+        "MQ",
+        "AI"
+      ]
+    },
+    "1": {
+      name: "South America",
+      states: [
+        "EC",
+        "AR",
+        "VE",
+        "BR",
+        "CO",
+        "BO",
+        "PE",
+        "CL",
+        "GY",
+        "GF",
+        "PY",
+        "UY",
+        "FK",
+        "AW",
+        "VG",
+        "KY",
+        "TC",
+        "CW",
+        "SR"
+      ]
+    },
+    "2": {
+      name: "Europe",
+      states: [
+        "IT",
+        "NL",
+        "NO",
+        "DK",
+        "IE",
+        "GB",
+        "RO",
+        "DE",
+        "FR",
+        "AL",
+        "AT",
+        "BY",
+        "BE",
+        "LU",
+        "BG",
+        "CZ",
+        "EE",
+        "GR",
+        "HU",
+        "IS",
+        "LV",
+        "LT",
+        "MD",
+        "PL",
+        "PT",
+        "RS",
+        "SI",
+        "HR",
+        "BA",
+        "ME",
+        "MK",
+        "SK",
+        "ES",
+        "FI",
+        "SE",
+        "CH",
+        "TR",
+        "CY",
+        "UA",
+        "XK",
+        "MT",
+        "FO"
+      ]
+    },
+    "3": {
+      name: "Africa and the Middle East",
+      states: [
+        "NE",
+        "AO",
+        "EG",
+        "TN",
+        "GA",
+        "DZ",
+        "LY",
+        "CG",
+        "GQ",
+        "BJ",
+        "BW",
+        "BF",
+        "BI",
+        "CM",
+        "CF",
+        "TD",
+        "CI",
+        "CD",
+        "DJ",
+        "ET",
+        "GM",
+        "GH",
+        "GN",
+        "GW",
+        "KE",
+        "LS",
+        "LR",
+        "MG",
+        "MW",
+        "ML",
+        "MA",
+        "MR",
+        "MZ",
+        "NA",
+        "NG",
+        "ER",
+        "RW",
+        "SN",
+        "SL",
+        "SO",
+        "ZA",
+        "SD",
+        "SS",
+        "SZ",
+        "TZ",
+        "TG",
+        "UG",
+        "EH",
+        "ZM",
+        "ZW",
+        "RE",
+        "KM",
+        "SC",
+        "MU",
+        "CV",
+        "IC",
+        "ST",
+        "YT"
+      ]
+    },
+    "4": {
+      name: "South Asia",
+      states: [
+        "SG",
+        "AU",
+        "NZ",
+        "BN",
+        "SB",
+        "FJ",
+        "PG",
+        "PH",
+        "ID",
+        "MV",
+        "NC",
+        "VU",
+        "NR",
+        "MY"
+      ]
+    },
+    "5": {
+      name: "North Asia",
+      states: [
+        "MN",
+        "RU",
+        "KZ",
+        "AF",
+        "PK",
+        "SA",
+        "SY",
+        "QA",
+        "IR",
+        "AZ",
+        "YE",
+        "UZ",
+        "KG",
+        "BH",
+        "OM",
+        "AE",
+        "IQ",
+        "IL",
+        "PS",
+        "JO",
+        "LB",
+        "KW",
+        "TJ",
+        "TM",
+        "JP",
+        "TW",
+        "NP",
+        "LA",
+        "VN",
+        "CN",
+        "MM",
+        "BD",
+        "BT",
+        "IN",
+        "KH",
+        "TH",
+        "KR",
+        "KP",
+        "GE",
+        "AM",
+        "LK"
+      ]
+    }
+  }
